@@ -49,6 +49,6 @@ getAggData <- function(df){
 
 dir.path <- "~/dev/datasciencecoursera/datasciencecoursera/Course_3/UCI HAR Dataset/"
 tidyDf <- getTidyData(dir.path)
-sumStats <- getMeanAndSd(tidyDf)
-aggDf <- getAggData(tidyDf)
+# sumStats <- getMeanAndSd(tidyDf)
+# aggDf <- getAggData(tidyDf)
 write.table(df, 'tidyDf.txt')
