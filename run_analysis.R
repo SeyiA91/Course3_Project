@@ -52,8 +52,8 @@ writeFile <- function(){
     response <- readline(prompt="Would you like to write the files to your current diretory? (y/n): ")
     if (response == 'y'){
         print("Your files have been saved as tidyDF.txt and aggDf.txt")
-        write.table(tidyDf, 'tidyDf.txt')
-        write.table(aggDf, 'aggDf.txt')
+        write.table(tidyDf, 'tidyDf.txt', row.names = F)
+        write.table(aggDf, 'aggDf.txt', row.names = F)
     }
 }
 
